@@ -41,9 +41,12 @@
 <p>透過 Jupyterlab 協同網頁, 輪流指定各組編寫 Topic 1 相關的程式練習, 以及網頁內容 (localhost 與 Codespaces 環境)編輯.</p>
 <h3>w10</h3>
 <p>第一題</p>
+<p><span>操作概要： 這部影片中使用了五種不同的方式去執行金字塔程式，模擬了在不同環境下去執行的方式與輸出的結果 心得： 在過程中我發現執行一個程式不是只有一種方法，各種模式有不同的優缺點，但是在用jupyter的過程我發現會報錯，應該是解壓縮不完全回去再試試看</span></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/qvgqsFHq1sY" width="560"></iframe></p>
 <p></p>
 <p>第二題</p>
+<p><span>１</span><span>.只能包含字母、數字和底線</span><em><span>：變數名稱只能包含a</span><span>-z、A</span><span>-Z、0</span><span>-9和</span></em><span>，不能包含空格或其他符號。</span><span> 大小寫敏感：Python是大小寫敏感的語言，myVariable並且myvariable是兩個不同的變數名稱。</span><span> 不得以數字開頭：變數中後可有數字，但不得做為開頭。</span><span> </span></p>
+<p><span> </span><span>2</span><span>.避免使用Python關鍵字if：關鍵字（keywords）是Python語言保留的單詞，具有特殊意義，不能作為變數名稱。</span></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/5MGOs_EsnGM" width="560"></iframe></p>
 <p></p>
 <p><span></span></p>
@@ -110,33 +113,17 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/J6TknpYzukw?si=KZbQ_k_Mh1Dd8DoK" title="YouTube video player" width="560"></iframe></p>
 <p>&lt;p<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-XEzlgipuvo?si=Y6Tg0YxyS2OWSjzP" title="YouTube video player" width="560"></iframe></p>
 <p style="padding-left: 30px;"></p>
-<p style="padding-left: 30px;">Use function to solve this kind of problem. <a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5705fc2a67aa1db0c0d44d6d0478b08b/raw/9567804babcc2fa9edc32403d76dcf2af4955bcf/problem-set1-2_py.txt">problem-set1-2.py</a></p>
-<p style="padding-left: 30px;">Extend to be more general to solve all kind of these problems. <a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5705fc2a67aa1db0c0d44d6d0478b08b/raw/9567804babcc2fa9edc32403d76dcf2af4955bcf/problem-set1-3_py.txt">problem-set1-3.py</a></p>
-<h4>set2- Calculus</h4>
-<p><span style="background-color: #ccffcc;">Under ideal conditions a certain bacteria population is known to double every three hours. Suppose that there are initially 100 bacteria. When will the population first reach 50,000 ?</span></p>
-<p style="padding-left: 30px;">We are asked to determine when a bacteria population, starting at 100 bacteria, will first reach 50,000, given that the population doubles every 3 hours.</p>
-<p style="padding-left: 30px;">Exponential Growth Equation:</p>
-<p style="padding-left: 30px;">The population growth can be modeled by the exponential growth formula:</p>
-<p style="padding-left: 30px;">\[<br/>P(t) = P_0 \times 2^{\frac{t}{T}}<br/>\]</p>
-<p style="padding-left: 30px;">Where:<br/>- \( P(t) \) is the population at time \( t \),<br/>- \( P_0 \) is the initial population,<br/>- \( T \) is the doubling time (in hours),<br/>- \( t \) is the time elapsed (in hours).</p>
-<p style="padding-left: 30px;">Given:<br/>- \( P_0 = 100 \) (initial population),<br/>- \( T = 3 \) hours (doubling time),<br/>- \( P(t) = 50,000 \) (target population).</p>
-<p style="padding-left: 30px;">Step 1: Plugging in the known values</p>
-<p style="padding-left: 30px;">We want to find the time \( t \) when the population reaches 50,000. Substituting the known values into the growth equation:</p>
-<p style="padding-left: 30px;">\[<br/>50,000 = 100 \times 2^{\frac{t}{3}}<br/>\]</p>
-<p style="padding-left: 30px;">Step 2: Simplifying the equation</p>
-<p style="padding-left: 30px;">First, divide both sides by 100 to isolate the exponential term:</p>
-<p style="padding-left: 30px;">\[<br/>500 = 2^{\frac{t}{3}}<br/>\]</p>
-<p style="padding-left: 30px;">Step 3: Solving for \( t \)</p>
-<p style="padding-left: 30px;">To solve for \( t \), take the logarithm (base 2) of both sides of the equation:</p>
-<p style="padding-left: 30px;">\[<br/>\log_2(500) = \frac{t}{3}<br/>\]</p>
-<p style="padding-left: 30px;">Now, multiply both sides by 3 to solve for \( t \):</p>
-<p style="padding-left: 30px;">\[<br/>t = 3 \times \log_2(500)<br/>\]</p>
-<p style="padding-left: 30px;">Step 4: Change of Base Formula</p>
-<p style="padding-left: 30px;">To compute \( \log_2(500) \) in Python or any other programming language, we can use the change of base formula:</p>
-<p style="padding-left: 30px;">\[<br/>\log_2(x) = \frac{\log_{10}(x)}{\log_{10}(2)}<br/>\]</p>
-<p style="padding-left: 30px;">Thus, the equation for \( t \) becomes:</p>
-<p style="padding-left: 30px;">\[<br/>t = 3 \times \frac{\log_{10}(500)}{\log_{10}(2)}<br/>\]</p>
-<p style="padding-left: 30px;">Python Code to Calculate \( t \): <a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5705fc2a67aa1db0c0d44d6d0478b08b/raw/d9558707c7e1765c1e6885ddc6919e32265c6d23/problem-set2-1_py.txt">problem-set2-1.py</a></p>
+<p style="padding-left: 30px;"></p>
+<p></p>
+<h3>w11</h3>
+<p>1.  已知可以用 Python 程式<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5e6eda7a004c15fa7262b9a80bfa4af6/raw/c2225ac22f32ee8485a630b42cf3f4d8567bb661/up_to_down_pyramid.py">由上往下列印三角形 *</a>, 或<a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5e6eda7a004c15fa7262b9a80bfa4af6/raw/56793c72d4495d564e3cc6214ed5fb68dbd2b21d/left_to_right_pyramid.py">由左往右列印三角形 *</a>, 請將此程式延伸到可以在 10x10 的字元區域中, 以 "*" 字元列印出圓型區域. 完成後請將程式碼存入個人 Gist 後, 直接在個人作業網站中的 Brython 頁面中執行. (提示: ?src=gist_script_URL)</p>
+<p><span>解: <a href="https://silver-guide-7vpvr49v965jfrgp5-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323112/2b015b44fda6fed3e168030d37597c5d/raw/bed3b37120ded007852c19d510220d0195507939/hw1.py">cp_hw</a></span></p>
+<p>2. 已知可以在網頁中利用 Brython 繪製方格與塗色, 如下連結, 請設法修改此一程式, 直接將程式存入個人的 Gist, 並利用黑色方塊圍出一個圓形區域.</p>
+<p><a href="https://mde.tw/cp2024/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/5705fc2a67aa1db0c0d44d6d0478b08b/raw/f95909804a1f134963cade8463eeb9bd32129ea8/grid_line_and_fill_in_Brython.py">網頁上的方格與塗色</a></p>
+<p><span>解:<a href="https://silver-guide-7vpvr49v965jfrgp5-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323112/2b015b44fda6fed3e168030d37597c5d/raw/bed3b37120ded007852c19d510220d0195507939/hw2.py">cp_hw</a></span></p>
+<p><span></span></p>
+<p>3. 完成上列題目後, 請利用 Youtube 影片<span>簡報</span>個人的解題過程與心得.</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ywRTxP6cyMI" width="560"></iframe></p>
 <p></p>
 <h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
