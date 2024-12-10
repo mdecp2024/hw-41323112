@@ -141,10 +141,23 @@
 <p>3. 完成上列題目後, 請利用 Youtube 影片<span>簡報</span>個人的解題過程與心得.</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ywRTxP6cyMI" width="560"></iframe></p>
 <h3>w13_hw</h3>
-<p>作業</p>
+<p>作業1</p>
+<p><a href="https://silver-guide-7vpvr49v965jfrgp5-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/b1e1d55667bd5eed474464d76d934b60857b951d/hw2.py">解:</a></p>
+<p>程式:</p>
+<p>from browser import html<br/>from browser import document as doc</p>
+<p># 利用 html 建立 canvas 超文件物件<br/>canvas = html.CANVAS(width=400, height=400)<br/>brython_div = doc["brython_div1"]<br/>brython_div &lt;= canvas</p>
+<p>ctx = canvas.getContext("2d")<br/>ctx.lineWidth = 1</p>
+<p># 繪製對角線，顏色設定為藍色<br/>ctx.strokeStyle = 'blue' # 設定對角線顏色為藍色<br/>ctx.beginPath() <br/>ctx.moveTo(40, 40)<br/>ctx.lineTo(270, 270) # 第一條對角線<br/>ctx.stroke()</p>
+<p><img alt="" height="372" src="/images/螢幕擷取畫面 2024-12-05 145422.png" width="548"/></p>
 <p></p>
 <p><a href="https://silver-guide-7vpvr49v965jfrgp5-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/fe136cf0eb44e67e341c4d19de6de2820a617883/hw1.py">解</a>:</p>
-<p></p>
+<p>程式:</p>
+<p>from browser import html<br/>from browser import document as doc</p>
+<p># 利用 html 建立 canvas 超文件物件<br/>canvas = html.CANVAS(width=400, height=400)<br/>brython_div = doc["brython_div1"]<br/>brython_div &lt;= canvas</p>
+<p>ctx = canvas.getContext("2d")<br/>ctx.lineWidth = 1</p>
+<p># 繪製對角線，顏色設定為藍色<br/>ctx.strokeStyle = 'blue' # 設定對角線顏色為藍色<br/>ctx.beginPath() <br/>ctx.moveTo(40, 40)<br/>ctx.lineTo(270, 270) # 第一條對角線<br/>ctx.stroke()</p>
+<p># 繪製第一個矩形，並填充顏色<br/>ctx.fillStyle = 'yellow' # 設定填充顏色為黃色<br/>ctx.strokeStyle = 'red' # 設定邊框顏色為紅色</p>
+<p>ctx.rect(40, 40, 230, 230) # 設定矩形的位置和大小<br/>ctx.stroke() # 繪製邊框<br/>ctx.beginPath()<br/># 繪製第二個矩形<br/>ctx.strokeStyle = 'green' # 設定邊框顏色為綠色<br/>ctx.beginPath() <br/>ctx.rect(140, 140, 220, 220) # 設定矩形的位置和大小<br/>ctx.stroke() # 繪製邊框</p>
 <p><img alt="" height="261" src="/images/螢幕擷取畫面 2024-12-05 144335.png" width="288"/></p>
 <p></p><h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
