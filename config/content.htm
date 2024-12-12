@@ -155,39 +155,15 @@
 <h3>w13_hw</h3>
 <p>作業1</p>
 <p><a href="https://silver-guide-7vpvr49v965jfrgp5-8081.app.github.dev/content/Brython.html?src=https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/b1e1d55667bd5eed474464d76d934b60857b951d/hw2.py">解:</a></p>
-<p>程式:</p>
-<p>from browser import html<br/>from browser import document as doc</p>
-<p># 利用 html 建立 canvas 超文件物件<br/>canvas = html.CANVAS(width=400, height=400)<br/>brython_div = doc["brython_div1"]<br/>brython_div &lt;= canvas</p>
-<p>ctx = canvas.getContext("2d")<br/>ctx.lineWidth = 1</p>
-<p># 繪製對角線，顏色設定為藍色<br/>ctx.strokeStyle = 'blue' # 設定對角線顏色為藍色<br/>ctx.beginPath() <br/>ctx.moveTo(40, 40)<br/>ctx.lineTo(270, 270) # 第一條對角線<br/>ctx.stroke()</p>
-<p><img alt="" height="372" src="/images/螢幕擷取畫面 2024-12-05 145422.png" width="548"/></p>
+<p><a href="https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/f6ab0e2b123fa5748b2c727b599dd5e94766aa30/hw1.py">程式:</a></p>
+<p><br/><img alt="" height="372" src="/images/螢幕擷取畫面 2024-12-05 145422.png" width="548"/></p>
 <p></p>
 <p></p>
 <p>作業2</p>
 <p><a href="https://mdecp2024.github.io/hw-41323112/content/Brython.html?src=https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/64fc62259578261a87877d6fadd681e1e13134c0/hw2.py">接</a></p>
-<p>from browser import html<br/>from browser import document as doc<br/>import math<br/>import random</p>
-<p>canvas = html.CANVAS(width=500, height=500)<br/>brython_div = doc["brython_div1"]<br/>brython_div &lt;= canvas</p>
-<p>ctx = canvas.getContext("2d")<br/>ctx.lineWidth = 4</p>
-<p># 混色模式<br/>ctx.globalCompositeOperation = "screen"</p>
-<p># 隨機顏色函數<br/>def random_color():<br/> return "rgb({}, {}, {})".format(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))</p>
-<p># 黑邊圓*2(每個畫四個邊邊)<br/>ctx.strokeStyle = 'black'<br/># 第一個圓<br/>ctx.beginPath()<br/>ctx.arc(160, 160, 141, 0.25 * math.pi, 0.75 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(160, 160, 141, 0.75 * math.pi, 1.25 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(160, 160, 141, 1.25 * math.pi, 1.75 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(160, 160, 141, 1.75 * math.pi, 0.25 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p># 第二個圓<br/>ctx.beginPath()<br/>ctx.arc(260, 260, 141, 1.25 * math.pi, 1.75 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(260, 260, 141, 1.75 * math.pi, 0.25 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(260, 260, 141, 0.25 * math.pi, 0.75 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.arc(260, 260, 141, 0.75 * math.pi, 1.25 * math.pi)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p># 紅方形*2(4個三角形)<br/>ctx.strokeStyle = 'red'<br/>ctx.beginPath()<br/>ctx.moveTo(60, 60)<br/>ctx.lineTo(60, 260)<br/>ctx.lineTo(260, 260)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.moveTo(60, 60)<br/>ctx.lineTo(260, 60)<br/>ctx.lineTo(260, 260)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.moveTo(160, 160)<br/>ctx.lineTo(360, 160)<br/>ctx.lineTo(360, 360)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.moveTo(160, 160)<br/>ctx.lineTo(160, 360)<br/>ctx.lineTo(360, 360)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p># 重疊的小方型<br/>ctx.beginPath()<br/>ctx.moveTo(160, 160)<br/>ctx.lineTo(160, 260)<br/>ctx.lineTo(260, 260)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p>ctx.beginPath()<br/>ctx.moveTo(160, 160)<br/>ctx.lineTo(260, 160)<br/>ctx.lineTo(260, 260)<br/>ctx.fillStyle = random_color() # 隨機顏色<br/>ctx.fill()<br/>ctx.stroke()</p>
-<p># 籃斜線<br/>ctx.strokeStyle = 'blue'<br/>ctx.beginPath()<br/>ctx.moveTo(60, 60)<br/>ctx.lineTo(260, 260)<br/>ctx.stroke()</p>
+<p><a href="https://gist.githubusercontent.com/41323112/d7fc1c97ba313d6722f63a905b75a597/raw/f6ab0e2b123fa5748b2c727b599dd5e94766aa30/hw2.py">程式碼:</a></p>
 <p><br/><br/><img alt="" height="428" src="/images/螢幕擷取畫面 2024-12-12 124939.png" width="492"/></p>
-<p></p>
-<h3>w14</h3>
+<p></p><h3>w14</h3>
 <p>1.</p>
 <p><a href="https://mdecp2024.github.io/hw-41323112/content/Brython.html?src=https://gist.githubusercontent.com/41323112/a07f55e57277e49e43b58187504285a5/raw/c2706ac211335bdef9cf15944a100101beb5f706/1.py">解:</a></p>
 <pre><a href="https://gist.githubusercontent.com/41323112/a07f55e57277e49e43b58187504285a5/raw/c2706ac211335bdef9cf15944a100101beb5f706/1.py">程式碼:</a><br/><br/><img alt="" height="362" src="/images/螢幕擷取畫面 2024-12-12 135912.png" width="498"/></pre><h1>HW 2</h1>
